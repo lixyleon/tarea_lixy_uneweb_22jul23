@@ -1,0 +1,27 @@
+<script>
+    let arrSum = [];
+     
+     const key = keyboards.length;
+     const drive = drives.length;
+     let largeArrSum = key*drive-1;
+     
+  for(let i = 0; i<key; i++){
+     for(let j = 0; j<drive;j++){
+      
+      arrSum[largeArrSum] = keyboards[i]+drives[j];
+      largeArrSum--;
+     }
+   }
+ 
+   let arrOrde = arrSum.sort();
+   const n = arrOrde.length-1;
+   for(let i = n; i>=0; i--){
+     if(arrOrde[i]<=b){
+       return arrOrde[i];
+     }else{
+       return -1;
+     }
+   }
+  
+
+</script>
